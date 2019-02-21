@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require './lib/personal.rb'
 
 class Birthday < Sinatra::Base
   enable :sessions
@@ -8,7 +9,13 @@ class Birthday < Sinatra::Base
     erb :index
   end
 
+  post '/name' do
+  $person = Person.new(params[:name])
+  redirect to('/birthday')
+end
+
   get '/birthday' do
+    @name = $person.name
     erb :celebration
   end
 
