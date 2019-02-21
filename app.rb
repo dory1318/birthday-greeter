@@ -13,8 +13,7 @@ class Birthday < Sinatra::Base
   end
 
   get '/countdown' do
-    'hello world'
-    # erb :countdown
+    erb :countdown
   end
 
 end
