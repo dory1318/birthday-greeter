@@ -1,4 +1,5 @@
-require 'sinatra/base'
+require 'bundler'
+Bundler.require
 
 class Birthday < Sinatra::Base
   enable :sessions
@@ -12,9 +13,8 @@ class Birthday < Sinatra::Base
   end
 
   get '/countdown' do
-    erb :countdown
+    'hello world'
+    # erb :countdown
   end
-
-run! if app_file == $0
 
 end
