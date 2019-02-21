@@ -6,12 +6,14 @@ The website takes the visitor's name and birtday (day + month), then redirects t
 
 ## My progress so far:
 
-- you can submit your name and your birthday (days option accepts numbers from 1 to 31, months option is a list of months from January to December)
-- after submission it is redirected to /birthday where you are being greet personally (Happy Birthday #{@name}!!)
+- you can submit your name and your birthday ('days' option accepts numbers from 1 to 31, 'months option' is a list of months from January to December)
+- after submission it checks wheter the date is the same as today date or not
+- if today is your birthday it redirects you to /birthday to greet you, if not, it redirects you to /countdown
 - tests are passing
 
 ## The following things are need to be done:
-- if statement needs to be added so that can decide if /birthday or /countdown
+- it can not tell yet how many day until your birthday
+- need to write more tests
 
 <img width="682" alt="screenshot 2019-02-21 at 11 44 39" src="https://user-images.githubusercontent.com/45072719/53175846-c24aac00-35e4-11e9-8880-ca9fd70702f6.png">
 
